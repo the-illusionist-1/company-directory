@@ -13,7 +13,7 @@ const user_name = faker.internet.username({firstName:firstname, lastName:lastnam
 
 <!--  {{ fullname }} <br />-->
   <div class="border border-gray-400 rounded-lg shadow bg-gray-200 h-full">
-    <img class="object-fill h-480 w-960" v-bind:src="faker.image.urlLoremFlickr({category: 'dog', height: 480, width: 960})" />
+    <img class="object-fill h-480 w-960" v-bind:src="faker.image.urlLoremFlickr({category: 'dog', height: 480, width: 960})" class="rounded-t-xl" />
     <div class="p-4">
       <p class="mb-2 text-2xl font-bold">{{ fullname }}</p>
       <p class="mb-3 font-normal text-gray-700">{{ job_title }}</p>
