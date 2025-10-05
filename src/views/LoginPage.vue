@@ -19,7 +19,9 @@ import { useRoute, useRouter } from 'vue-router';
 import {useAuth} from '../composables/useAuth.js'
 
 const {login, logout} = useAuth();
-const router = useRoute();
+
+const router = useRouter();
+const route = useRoute();
 
 const username = ref('');
 const password = ref('');
